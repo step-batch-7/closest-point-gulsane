@@ -12,7 +12,8 @@ gcc -o $excecutable ./*.o
 echo "compiling done"
 echo "executing..."
 
-mv $excecutable ./bin
-./bin/$excecutable
+
+mv ./${excecutable} ./bin
+./bin/${excecutable}
 
 rm -rf ./*.o
